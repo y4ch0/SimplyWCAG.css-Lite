@@ -137,6 +137,8 @@ button,input[type=submit],input[type=reset],a:has(b) {
     border: none;
     cursor: pointer;
     text-decoration: none;
+    margin: 0.25rem 0.25rem 0.25rem 0;
+    display: inline-block;
 }
 
 button,input[type=submit],a:has(b) {
@@ -306,9 +308,13 @@ kbd {
 
 @media screen and (max-width:768px) {
     body {
-        width: 90vw;
+        width: 95vw;
     }
     aside {
         width: 50%;
+    }
+    main {
+        border: none;
+        padding: 0;
     }
 }
