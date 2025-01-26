@@ -37,6 +37,13 @@
                         <li><a href="files/simplywcagcss-lite.css" download target="_blank"><code>simplywcagcss-lite.css</code> (Size: 6KB)</a></li>
                     </ul>
                 </fieldset>
+                <p>...or instead of downloading <code>css</code> file use <code>jsdelivr.net</code> to apply <strong>SimplyWCAG.css</strong>:</p>
+                <pre>&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/y4ch0/SimplyWCAG.css-Lite/files/simplywcagcss-lite.css"&gt;
+&lt;/head&gt;</pre>
+                <strong>Remember:</strong> Don't forget to add <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> to <code>head</code> section for responsive layout.
             </section>
         </article>
         <article>
@@ -114,6 +121,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut assumenda deleniti,
                 <input type="submit" value="Submit button">
                 <input type="reset" value="Reset button">
                 <button disabled="disabled">Disabled button</button>
+                <a href="#"><b>Button as a link</b></a>
             </section>
         </article>
         <article>
@@ -123,6 +131,9 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut assumenda deleniti,
                     <legend>Test</legend>
                     <form>
                         <label>Text input:</label>
+                        <input type="text">
+                        <p>To tag required input add <code>&lt;b></code> tag to the label with "*" character.</p>
+                        <label>Text input: <b>*</b></label>
                         <input type="text">
                         <label>Select input:</label>
                         <select>
@@ -171,6 +182,41 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut assumenda deleniti,
                     <dt>Milk</dt>
                     <dd>White cold drink</dd>
                 </dl>
+            </section>
+        </article>
+        <article>
+            <section>
+                <h2>Lists</h2>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>
+                        Lorem ipsum dolor sit amet.
+                        <ol>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ol>
+                    </li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+                <ol>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>
+                        Lorem ipsum dolor sit amet.
+                        <ol>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet.
+                        <ul>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                        </ul>
+                    </li>
+                </ol>
             </section>
         </article>
         <article>

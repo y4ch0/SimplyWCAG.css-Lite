@@ -130,23 +130,28 @@ blockquote footer {
     color: rgba(0,0,0,0.5);
 }
 
-button,input[type=submit],input[type=reset] {
+button,input[type=submit],input[type=reset],a:has(b) {
     padding: 0.5rem 0.75rem;
     font-size: 1rem;
     border-radius: 0.25rem;
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
-button,input[type=submit] {
+button,input[type=submit],a:has(b) {
     background-color: #155bb8;
-    color: #fff;
+    color: #fff !important;
     font-weight: 500;
 }
 
-button:hover,input[type=submit]:hover,input[type=reset]:hover {
+button:hover,input[type=submit]:hover,input[type=reset]:hover,a:has(b):hover {
     text-decoration: underline;
     opacity: 0.75;
+}
+
+a b {
+    font-weight: 500;
 }
 
 button:disabled {
@@ -242,6 +247,11 @@ label:has(input[type=checkbox], input[type=radio]) {
     display: flex;
     align-items: center;
     gap: 0.35rem;
+}
+
+label:has(input[type=checkbox], input[type=radio]):focus {
+    outline: 3px solid #155bb8;
+    outline-offset: -1px;
 }
 
 label:has(input[type=checkbox], input[type=radio]) input {
