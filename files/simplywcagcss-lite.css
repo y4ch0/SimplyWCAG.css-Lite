@@ -304,14 +304,14 @@ kbd {
     article {
         flex-direction: column;
     }
+    aside {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:768px) {
     body {
         width: 95vw;
-    }
-    aside {
-        width: 50%;
     }
     main {
         border: none;
