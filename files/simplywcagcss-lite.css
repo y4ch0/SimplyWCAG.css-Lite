@@ -139,6 +139,7 @@ button,input[type=submit],input[type=reset],a:has(b) {
     text-decoration: none;
     margin: 0.25rem 0.25rem 0.25rem 0;
     display: inline-block;
+    line-height: 1.4;
 }
 
 button,input[type=submit],a:has(b) {
