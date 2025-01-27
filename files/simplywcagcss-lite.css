@@ -300,6 +300,45 @@ kbd {
     display: inline-block;
 }
 
+dialog {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0,0,0,0.1);
+    border: none;
+}
+
+dialog[open] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+dialog div {
+    background-color: #fff;
+    max-width: 50%;
+    max-height: 70%;
+    overflow-y: auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid rgba(0,0,0,0.2);
+    position: relative;
+}
+
+dialog div .dialog-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width:1024px) {
     body {
         width: 60vw;
@@ -310,6 +349,9 @@ kbd {
     aside {
         width: 100%;
     }
+    dialog div {
+        max-width: 70%;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -319,5 +361,9 @@ kbd {
     main {
         border: none;
         padding: 0;
+    }
+    dialog div {
+        max-width: 95%;
+        max-height: 85%;
     }
 }

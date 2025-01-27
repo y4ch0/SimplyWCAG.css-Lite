@@ -271,6 +271,22 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut assumenda deleniti,
                 <kbd>CTRL + Alt</kbd>
             </section>
         </article>
+        <article>
+            <section>
+                <h2>Dialog</h2>
+                <p>Rulebreak: Simple <code>&lt;dialog></code> code using one <code>class</code>, <code>id</code>, and <code>data</code> HTML tags.</p>
+                <button class="dialog-open" data-dialog_id="dialog1">Open dialog id 1</button>
+                <p><strong>When using this component: </strong> remember to put in the website <code>script</code> with the code at the bottom of this HTML document.</p>
+                <dialog id="dialog1">
+                    <div>
+                        <h2>Dialog with id 1</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, fuga.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam atque aut error quos consequatur recusandae. Dolore cum assumenda iste, praesentium et non nisi error deserunt quae eius nam, necessitatibus debitis sit alias! Repellat debitis libero, dolores, corrupti sed minima delectus odit, incidunt illum ducimus excepturi nostrum quidem. Perferendis magni totam delectus dignissimos. Repellat, porro reprehenderit eligendi officia beatae sit obcaecati commodi quaerat quas! Vitae est sequi deserunt voluptate iste provident numquam ipsa saepe quam, maxime officia minima accusamus obcaecati odit ratione incidunt, vel quaerat porro inventore dolor doloremque aliquid eligendi, sunt quo? Accusantium animi repellat quos laudantium mollitia ea, excepturi eveniet voluptatum dignissimos nulla, soluta dolor! Delectus esse velit iusto numquam ducimus repellat culpa, recusandae debitis natus impedit ex, corrupti consequatur! Doloremque ipsum harum, sapiente obcaecati voluptate odio vero necessitatibus asperiores, amet veniam eaque aliquid quam, nisi molestias consectetur commodi alias. Nulla praesentium facilis temporibus! Sequi temporibus consequuntur voluptas expedita iure quasi obcaecati nihil repudiandae placeat voluptatibus, laudantium tempore voluptates quia hic iste quis error facere adipisci? Ratione, eum consectetur nam magni placeat ipsum, iusto quo impedit eos, reiciendis fugiat pariatur corrupti debitis earum natus cum! Animi molestiae cumque qui veritatis dolorem, vero neque asperiores provident expedita, itaque amet?</p>
+                        <button class="dialog-close" data-dialog_id="dialog1">&times;</button>
+                    </div>
+                </dialog>
+            </section>
+        </article>
     </main>
     <footer>
         <hr>
@@ -281,5 +297,17 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut assumenda deleniti,
             <li><a href="#">lorem ipsum</a></li>
         </ul>
     </footer>
+    <script>
+        document.querySelectorAll(".dialog-open").forEach(item => {
+            item.addEventListener('click', () => {
+                document.getElementById(item.dataset.dialog_id).setAttribute("open", "");
+            })
+        })
+        document.querySelectorAll(".dialog-close").forEach(item => {
+            item.addEventListener('click', () => {
+                document.getElementById(item.dataset.dialog_id).removeAttribute("open");
+            })
+        })
+    </script>
 </body>
 </html>
