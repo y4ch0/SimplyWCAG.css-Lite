@@ -21,7 +21,16 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
         <ul>
             <li><a href="#">home</a></li>
             <li><a href="#">about</a></li>
-            <li><a href="#">contact</a></li>
+            <li>
+                <div>
+                    <a class="toggler">contact</a>
+                    <ul>
+                        <li><a href="#">dropdown item</a></li>
+                        <li><a href="#">dropdown item</a></li>
+                        <li><a href="#">dropdown item</a></li>
+                    </ul>
+                </div>
+            </li>
         </ul>
     </nav>
     <main>
@@ -30,7 +39,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
                 <img src="files/logo.svg" alt="SimplyWCAG.css logo">
             </figure>
             <h1>SimplyWCAG.css Lite</h1>
-            <p>This is <strong>lite</strong>, class-less version of SimplyWCAG.css framework. You just need to follow <a href="https://html.spec.whatwg.org/multipage/">HTML 5 document structure</a> without using any classes.</p>
+            <p>This is <strong>lite</strong>, low-class level version of SimplyWCAG.css framework. You just need to follow <a href="https://html.spec.whatwg.org/multipage/">HTML 5 document structure</a> without using any classes.</p>
             <hr>
         </header>
         <article>
@@ -256,22 +265,26 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut assumenda deleniti,
         </article>
         <article>
             <section>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Lorem ipsum dolor</th>
-                            <th>Lorem ipsum dolor</th>
-                            <th>Lorem ipsum dolor</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Lorem ipsum dolor</td>
-                            <td>Lorem ipsum dolor</td>
-                            <td>Lorem ipsum dolor</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h2>Table</h2>
+                <p>Put <code>&lt;table></code> inside <code>&lt;div></code> container to make it responsive (overflow will be scrollable).</p>
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Lorem ipsum dolor</th>
+                                <th>Lorem ipsum dolor</th>
+                                <th>Lorem ipsum dolor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lorem ipsum dolor</td>
+                                <td>Lorem ipsum dolor</td>
+                                <td>Lorem ipsum dolor</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </section>
         </article>
         <article>
@@ -296,6 +309,20 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut assumenda deleniti,
                 </dialog>
             </section>
         </article>
+        <article>
+            <section>
+                <h2>Dropdown menu</h2>
+                <p>It uses one class <code>toggler</code> for <code>&lt;a></code> element to allow javascript detect dropdown menu.</p>
+                <div>
+                    <a class="toggler"><b>Dropdown toggler</b></a>
+                    <ul>
+                        <li><a href="#">Dropdown item</a></li>
+                        <li><a href="#">Dropdown item</a></li>
+                        <li><a href="#">Dropdown item</a></li>
+                    </ul>
+                </div>
+            </section>
+        </article>
     </main>
     <footer>
         <hr>
@@ -317,6 +344,20 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut assumenda deleniti,
                 document.getElementById(item.dataset.dialog_id).removeAttribute("open");
             })
         })
+        document.body.addEventListener("click", function (event) {
+            const toggler = event.target.closest(".toggler");
+            if (toggler) {
+                event.preventDefault();
+                const dropdown = toggler.nextElementSibling;
+                if (dropdown && dropdown.tagName === "UL") {
+                    dropdown.classList.toggle("show");
+                }
+            } else {
+                document.querySelectorAll("ul.show").forEach(dropdown => {
+                    dropdown.classList.remove("show");
+                });
+            }
+        });
     </script>
 </body>
 </html>
