@@ -369,6 +369,7 @@ div:has(a.toggler, ul) a.toggler::after {
 div:has(a.toggler, ul) ul li a {
     padding: 0.25rem 0.5rem;
     display: flex;
+    gap: 0.5rem;
 }
 
 div:has(a.toggler, ul) ul li a:hover {
