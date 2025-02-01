@@ -4,7 +4,7 @@ SimplyWCAG.css Light is a lightweight, easy to use, and accessible CSS framework
 
 ## Main features
 * Light `.css` stylesheet (~6KB)
-* Pure HTML (no CSS classess)
+* Low css class usage (2 classess for entire CSS file)
 * Accessible (compatible [mostly] with WCAG 2.1 guidelines)
 
 ## How to use
