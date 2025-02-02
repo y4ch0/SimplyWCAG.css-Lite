@@ -14,6 +14,8 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100vw;
+    max-width: 100vw !important;
 }
 
 body {
@@ -210,12 +212,16 @@ details summary {
     font-weight: 700;
 }
 
+details[open] summary {
+    margin-bottom: 1rem;
+}
+
 details summary:hover {
     text-decoration: underline;
 }
 
-details p {
-    padding: 1rem;
+details p, details span, details h1, details h2, details h3, details h4, details h5, details h6 {
+    padding: 0 1rem;
 }
 
 dl {
