@@ -345,7 +345,7 @@ dialog div .dialog-close {
     align-items: center;
 }
 
-div:has(a.toggler, ul) ul {
+div.dropdown ul {
     display: none;
     list-style: none;
     padding: 0;
@@ -362,25 +362,25 @@ div:has(a.toggler, ul) ul {
     width: fit-content;
 }
 
-div:has(a.toggler, ul) a.toggler::after {
+div.dropdown a.toggler::after {
     content: " \25bc";
 }
 
-div:has(a.toggler, ul) ul li a {
+div.dropdown ul li a {
     padding: 0.25rem 0.5rem;
     display: flex;
     gap: 0.5rem;
 }
 
-div:has(a.toggler, ul) ul li a:hover {
+div.dropdown ul li a:hover {
     background-color: rgba(0,0,0,0.05);
 }
 
-div:has(a.toggler, ul) ul.show {
+div.dropdown ul.show {
     display: block;
 }
 
-div:has(ul.show) a.toggler::after {
+div.dropdown:has(ul.show) a.toggler::after {
     content: " \25b2";
 }
 
