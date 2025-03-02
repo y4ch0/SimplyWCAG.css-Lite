@@ -1,100 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>SimplyWCAG.css | Guidelines</title>
-        <link rel="stylesheet" href="files/simplywcagcss-lite.min.css" />
-        <link rel="icon" href="files/favicon.ico" />
-        <style>
-            .example-layout article {
-                background-color: rgba(255, 0, 0, 0.2);
-                padding: 0.5rem;
-            }
-            .example-layout article section {
-                background-color: rgba(0, 0, 255, 0.35);
-                padding: 0 0.5rem;
-            }
-        </style>
-    </head>
-    <body>
-        <nav>
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="guidelines.html">guidelines</a></li>
-            </ul>
-        </nav>
-        <main>
-            <article>
-                <section>
-                    <h2>Guidelines</h2>
-                    <p>
-                        In case you want short and clear explanation of good
-                        habits when building a website.
-                    </p>
-                    <p>
-                        <strong>Disclaimer: </strong> <u>Do not</u> use
-                        components from this website (except titled as "Correct
-                        usage"). It was slightly redesigned and new styling was
-                        added to help present you some examples of HTML layout.
-                    </p>
-                    <hr />
-                </section>
-            </article>
-            <article>
-                <section>
-                    <h2>Layout/grid</h2>
-                    <p>
-                        To set layout for website use
-                        <code>&lt;article></code> (for rows) and
-                        <code>&lt;section></code> (for columns in row) tags.
-                    </p>
-                    <h3>Single column article:</h3>
-                    <div class="example-layout">
-                        <article>
-                            <section>
-                                <p>
-                                    This is a blank section. Put website content
-                                    here.
-                                </p>
-                            </section>
-                        </article>
-                    </div>
-                    <h3>Multi column article:</h3>
-                    <div class="example-layout">
-                        <article>
-                            <section>
-                                <p>
-                                    This is a blank section. Put website content
-                                    here.
-                                </p>
-                            </section>
-                            <section>
-                                <p>
-                                    This is a blank section. Put website content
-                                    here.
-                                </p>
-                            </section>
-                            <section>
-                                <p>
-                                    This is a blank section. Put website content
-                                    here.
-                                </p>
-                            </section>
-                        </article>
-                    </div>
-                    <p>
-                        After specified requirements are met the layout changes,
-                        and columns (sections) are not presented side by side,
-                        but underneath each other.
-                    </p>
-                    <p>
-                        Check by using inspection tool <kbd>F12</kbd> and
-                        preview this website with device toolbar to check
-                        responsive behavior.
-                    </p>
-                    <h4>Correct usage:</h4>
-                    <pre>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SimplyWCAG.css | Guidelines</title>
+    <link rel="stylesheet" href="files/simplywcagcss-lite-dev.css" />
+    <link rel="icon" href="files/favicon.ico" />
+    <style>
+        .example-layout article {
+            background-color: rgba(255, 0, 0, 0.2);
+            padding: 0.5rem;
+        }
+
+        .example-layout article section {
+            background-color: rgba(0, 0, 255, 0.35);
+            padding: 0 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="guidelines.html">guidelines</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <section>
+                <h2>Guidelines</h2>
+                <p>
+                    In case you want short and clear explanation of good
+                    habits when building a website.
+                </p>
+                <p>
+                    <strong>Disclaimer: </strong> <u>Do not</u> use
+                    components from this website (except titled as "Correct
+                    usage"). It was slightly redesigned and new styling was
+                    added to help present you some examples of HTML layout.
+                </p>
+                <hr />
+            </section>
+        </article>
+        <article>
+            <section>
+                <h2>Layout/grid</h2>
+                <p>
+                    To set layout for website use
+                    <code>&lt;article></code> (for rows) and
+                    <code>&lt;section></code> (for columns in row) tags.
+                </p>
+                <h3>Single column article:</h3>
+                <div class="example-layout">
+                    <article>
+                        <section>
+                            <p>
+                                This is a blank section. Put website content
+                                here.
+                            </p>
+                        </section>
+                    </article>
+                </div>
+                <h3>Multi column article:</h3>
+                <div class="example-layout">
+                    <article>
+                        <section>
+                            <p>
+                                This is a blank section. Put website content
+                                here.
+                            </p>
+                        </section>
+                        <section>
+                            <p>
+                                This is a blank section. Put website content
+                                here.
+                            </p>
+                        </section>
+                        <section>
+                            <p>
+                                This is a blank section. Put website content
+                                here.
+                            </p>
+                        </section>
+                    </article>
+                </div>
+                <p>
+                    After specified requirements are met the layout changes,
+                    and columns (sections) are not presented side by side,
+                    but underneath each other.
+                </p>
+                <p>
+                    Check by using inspection tool <kbd>F12</kbd> and
+                    preview this website with device toolbar to check
+                    responsive behavior.
+                </p>
+                <h4>Correct usage:</h4>
+                <pre>
 &lt;article&gt;
     &lt;section&gt;
         &lt;p&gt;This is a blank section. Put website content here.&lt;/p&gt;
@@ -105,150 +108,143 @@
     &lt;section&gt;
         &lt;p&gt;This is a blank section. Put website content here.&lt;/p&gt;
     &lt;/section&gt;
-&lt;/article&gt;</pre
-                    >
+&lt;/article&gt;</pre>
+                <p>
+                    You may ask yourself
+                    <cite>Why do I need to use these to make my website look
+                        clean?</cite>. Well, these tags like <code>article</code> and
+                    <code>section</code> are guidelines for HTML and CSS how
+                    to modify layout with multiple <code>@media</code> tags
+                    in CSS. Without it your website <i>might</i> not look
+                    good and layout can break if you use multiple columns in
+                    your website.
+                </p>
+            </section>
+        </article>
+        <article>
+            <section>
+                <h2>Tables</h2>
+                <p>
+                    These are used to present data in organized way with
+                    ability to compare to each other.
+                </p>
+                <p>
+                    For responsive behavior (your table won't overflow the
+                    website) put your <code>table</code> inside
+                    <code>div</code>.
+                </p>
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Lorem ipsum dolor</th>
+                                <th>Lorem ipsum dolor</th>
+                                <th>Lorem ipsum dolor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lorem ipsum dolor</td>
+                                <td>Lorem ipsum dolor</td>
+                                <td>Lorem ipsum dolor</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor</td>
+                                <td>Lorem ipsum dolor</td>
+                                <td>Lorem ipsum dolor</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor</td>
+                                <td>Lorem ipsum dolor</td>
+                                <td>Lorem ipsum dolor</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor</td>
+                                <td>Lorem ipsum dolor</td>
+                                <td>Lorem ipsum dolor</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>
+                    Table headers (<code>th</code>) are automatically marked
+                    with slightly darker background and bolded text.
+                </p>
+            </section>
+        </article>
+        <article>
+            <section>
+                <h2>Summary</h2>
+                <p>
+                    To summary any data (such as topic description, FAQ
+                    section etc.) use <code>summary</code> tag.
+                </p>
+                <details>
+                    <summary>
+                        What came first? The chicken or the egg?
+                    </summary>
                     <p>
-                        You may ask yourself
-                        <cite
-                            >Why do I need to use these to make my website look
-                            clean?</cite
-                        >. Well, these tags like <code>article</code> and
-                        <code>section</code> are guidelines for HTML and CSS how
-                        to modify layout with multiple <code>@media</code> tags
-                        in CSS. Without it your website <i>might</i> not look
-                        good and layout can break if you use multiple columns in
-                        your website.
-                    </p>
-                </section>
-            </article>
-            <article>
-                <section>
-                    <h2>Tables</h2>
-                    <p>
-                        These are used to present data in organized way with
-                        ability to compare to each other.
-                    </p>
-                    <p>
-                        For responsive behavior (your table won't overflow the
-                        website) put your <code>table</code> inside
-                        <code>div</code>.
-                    </p>
-                    <div>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Lorem ipsum dolor</th>
-                                    <th>Lorem ipsum dolor</th>
-                                    <th>Lorem ipsum dolor</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Lorem ipsum dolor</td>
-                                    <td>Lorem ipsum dolor</td>
-                                    <td>Lorem ipsum dolor</td>
-                                </tr>
-                                <tr>
-                                    <td>Lorem ipsum dolor</td>
-                                    <td>Lorem ipsum dolor</td>
-                                    <td>Lorem ipsum dolor</td>
-                                </tr>
-                                <tr>
-                                    <td>Lorem ipsum dolor</td>
-                                    <td>Lorem ipsum dolor</td>
-                                    <td>Lorem ipsum dolor</td>
-                                </tr>
-                                <tr>
-                                    <td>Lorem ipsum dolor</td>
-                                    <td>Lorem ipsum dolor</td>
-                                    <td>Lorem ipsum dolor</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <p>
-                        Table headers (<code>th</code>) are automatically marked
-                        with slightly darker background and bolded text.
-                    </p>
-                </section>
-            </article>
-            <article>
-                <section>
-                    <h2>Summary</h2>
-                    <p>
-                        To summary any data (such as topic description, FAQ
-                        section etc.) use <code>summary</code> tag.
-                    </p>
-                    <details>
-                        <summary>
-                            What came first? The chicken or the egg?
-                        </summary>
-                        <p>
-                            Back to our original question: with amniotic eggs
-                            showing up roughly 340 million or so years ago, and
-                            the first chickens evolving at around 58 thousand
-                            years ago at the earliest, it's a safe bet to say
-                            the egg came first.
-                        </p>
-                        <p>
-                            Back to our original question: with amniotic eggs
-                            showing up roughly 340 million or so years ago, and
-                            the first chickens evolving at around 58 thousand
-                            years ago at the earliest, it's a safe bet to say
-                            the egg came first.
-                        </p>
-                        <p>
-                            Back to our original question: with amniotic eggs
-                            showing up roughly 340 million or so years ago, and
-                            the first chickens evolving at around 58 thousand
-                            years ago at the earliest, it's a safe bet to say
-                            the egg came first.
-                        </p>
-                        <p>
-                            <i
-                                >Source:
-                                <a
-                                    href="https://www.science.org.au/curious/earth-environment/which-came-first-chicken-or-egg"
-                                    >www.science.org.au</a
-                                ></i
-                            >
-                        </p>
-                    </details>
-                </section>
-            </article>
-            <article>
-                <section>
-                    <h2>Dropdown menu</h2>
-                    <p>
-                        It uses one class <code>toggler</code> for
-                        <code>&lt;a></code> element to allow javascript detect
-                        dropdown menu.
+                        Back to our original question: with amniotic eggs
+                        showing up roughly 340 million or so years ago, and
+                        the first chickens evolving at around 58 thousand
+                        years ago at the earliest, it's a safe bet to say
+                        the egg came first.
                     </p>
                     <p>
-                        Dropdowns are used to hide some of the options so they
-                        do not take up space on the page.
+                        Back to our original question: with amniotic eggs
+                        showing up roughly 340 million or so years ago, and
+                        the first chickens evolving at around 58 thousand
+                        years ago at the earliest, it's a safe bet to say
+                        the egg came first.
                     </p>
                     <p>
-                        <strong>Important note: </strong> Dropdowns can be used
-                        anywhere on the website as long as the component
-                        structure follows the template. (Dropdowns may be used
-                        in navbars, inside <code>aside</code>, inside
-                        <code>summary</code> etc. as long as component structure
-                        is kept.)
+                        Back to our original question: with amniotic eggs
+                        showing up roughly 340 million or so years ago, and
+                        the first chickens evolving at around 58 thousand
+                        years ago at the earliest, it's a safe bet to say
+                        the egg came first.
                     </p>
-                    <div class="dropdown">
-                        <a class="toggler"><b>Dropdown toggler</b></a>
-                        <ul>
-                            <li><a href="#">Redirect to top of website</a></li>
-                            <li><a href="index.html">Index page</a></li>
-                            <li>
-                                <a href="guidelines.html">Guidelines page</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <h3>Correct usage:</h3>
-                    <h5>Navbar</h5>
-                    <pre>
+                    <p>
+                        <i>Source:
+                            <a
+                                href="https://www.science.org.au/curious/earth-environment/which-came-first-chicken-or-egg">www.science.org.au</a></i>
+                    </p>
+                </details>
+            </section>
+        </article>
+        <article>
+            <section>
+                <h2>Dropdown menu</h2>
+                <p>
+                    It uses one class <code>toggler</code> for
+                    <code>&lt;a></code> element to allow javascript detect
+                    dropdown menu.
+                </p>
+                <p>
+                    Dropdowns are used to hide some of the options so they
+                    do not take up space on the page.
+                </p>
+                <p>
+                    <strong>Important note: </strong> Dropdowns can be used
+                    anywhere on the website as long as the component
+                    structure follows the template. (Dropdowns may be used
+                    in navbars, inside <code>aside</code>, inside
+                    <code>summary</code> etc. as long as component structure
+                    is kept.)
+                </p>
+                <div class="dropdown">
+                    <a class="toggler" role="button">Dropdown toggler</a>
+                    <ul>
+                        <li><a href="#">Redirect to top of website</a></li>
+                        <li><a href="index.html">Index page</a></li>
+                        <li>
+                            <a href="guidelines.html">Guidelines page</a>
+                        </li>
+                    </ul>
+                </div>
+                <h3>Correct usage:</h3>
+                <h5>Navbar</h5>
+                <pre>
 &lt;nav&gt;
     &lt;ul&gt;
         &lt;li&gt;&lt;a href="index.html"&gt;home&lt;/a&gt;&lt;/li&gt;
@@ -264,10 +260,9 @@
             &lt;/div&gt;
         &lt;/li&gt;
     &lt;/ul&gt;
-&lt;/nav&gt;</pre
-                    >
-                    <h5>Any other part of website</h5>
-                    <pre>
+&lt;/nav&gt;</pre>
+                <h5>Any other part of website</h5>
+                <pre>
 &lt;div class="dropdown"&gt;
     &lt;a class="toggler"&gt;&lt;b&gt;Dropdown toggler&lt;/b&gt;&lt;/a&gt;
     &lt;ul&gt;
@@ -275,160 +270,151 @@
         &lt;li&gt;&lt;a href="index.html"&gt;Index page&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href="guidelines.html"&gt;Guidelines page&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
-&lt;/div&gt;</pre
-                    >
-                </section>
-            </article>
-            <article>
-                <section>
-                    <h2>Dialog</h2>
-                    <p>
-                        Dialogs are website elements to reveal content hidden
-                        under a button description (e.g. cookies files
-                        management, privacy policy etc.)
-                    </p>
-                    <button class="dialog-open" data-dialog_id="dialog1">
-                        Open dialog id 1
-                    </button>
-                    <button class="dialog-open" data-dialog_id="dialog2">
-                        Open dialog id 2
-                    </button>
-                    <dialog id="dialog1">
-                        <div>
-                            <h2>Dialog with id 1</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Assumenda, fuga.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Molestias totam atque aut
-                                error quos consequatur recusandae. Dolore cum
-                                assumenda iste, praesentium et non nisi error
-                                deserunt quae eius nam, necessitatibus debitis
-                                sit alias! Repellat debitis libero, dolores,
-                                corrupti sed minima delectus odit, incidunt
-                                illum ducimus excepturi nostrum quidem.
-                                Perferendis magni totam delectus dignissimos.
-                                Repellat, porro reprehenderit eligendi officia
-                                beatae sit obcaecati commodi quaerat quas! Vitae
-                                est sequi deserunt voluptate iste provident
-                                numquam ipsa saepe quam, maxime officia minima
-                                accusamus obcaecati odit ratione incidunt, vel
-                                quaerat porro inventore dolor doloremque aliquid
-                                eligendi, sunt quo? Accusantium animi repellat
-                                quos laudantium mollitia ea, excepturi eveniet
-                                voluptatum dignissimos nulla, soluta dolor!
-                                Delectus esse velit iusto numquam ducimus
-                                repellat culpa, recusandae debitis natus impedit
-                                ex, corrupti consequatur! Doloremque ipsum
-                                harum, sapiente obcaecati voluptate odio vero
-                                necessitatibus asperiores, amet veniam eaque
-                                aliquid quam, nisi molestias consectetur commodi
-                                alias. Nulla praesentium facilis temporibus!
-                                Sequi temporibus consequuntur voluptas expedita
-                                iure quasi obcaecati nihil repudiandae placeat
-                                voluptatibus, laudantium tempore voluptates quia
-                                hic iste quis error facere adipisci? Ratione,
-                                eum consectetur nam magni placeat ipsum, iusto
-                                quo impedit eos, reiciendis fugiat pariatur
-                                corrupti debitis earum natus cum! Animi
-                                molestiae cumque qui veritatis dolorem, vero
-                                neque asperiores provident expedita, itaque
-                                amet?
-                            </p>
-                            <button
-                                class="dialog-close"
-                                data-dialog_id="dialog1"
-                            >
-                                &times;
-                            </button>
-                        </div>
-                    </dialog>
-                    <dialog id="dialog2">
-                        <div>
-                            <h2>Dialog with id 2</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Assumenda, fuga.
-                            </p>
-                            <p>This is simple dialog with placeholder text.</p>
-                            <button
-                                class="dialog-close"
-                                data-dialog_id="dialog2"
-                            >
-                                &times;
-                            </button>
-                        </div>
-                    </dialog>
-                    <h3>Correct usage:</h3>
-                    <ul>
-                        <li>
-                            Remember to assign proper,
-                            <u>unique for single page</u>, ID (<code
-                                >&lt;dialog id="dialog1"></code
-                            >,
-                            <code
-                                >&lt;button class="dialog-close"
-                                data-dialog_id="dialog1">&times;&lt;/button></code
-                            >) for every dialog so javascript will know which
-                            dialog is needed to be shown.
-                        </li>
-                        <li>
-                            Use proper structure of <code>dialog</code> HTML
-                            element (which can be found in
-                            <a href="index.html">index page</a>)
-                        </li>
-                    </ul>
-                </section>
-            </article>
-        </main>
-        <footer>
-            <hr />
-            <p>
-                SimplyWCAG.css Lite &copy; 2025 y4ch0 | Licensed under
-                <a href="https://opensource.org/license/MIT">MIT license</a>
-            </p>
-            <a href="#">Back to top</a>
-        </footer>
-        <script>
-            document.querySelectorAll(".dialog-open").forEach((item) => {
-                item.addEventListener("click", () => {
-                    document
-                        .getElementById(item.dataset.dialog_id)
-                        .setAttribute("open", "");
-                });
+&lt;/div&gt;</pre>
+            </section>
+        </article>
+        <article>
+            <section>
+                <h2>Dialog</h2>
+                <p>
+                    Dialogs are website elements to reveal content hidden
+                    under a button description (e.g. cookies files
+                    management, privacy policy etc.)
+                </p>
+                <button class="dialog-open" data-dialog_id="dialog1">
+                    Open dialog id 1
+                </button>
+                <button class="dialog-open" data-dialog_id="dialog2">
+                    Open dialog id 2
+                </button>
+                <dialog id="dialog1">
+                    <div>
+                        <h2>Dialog with id 1</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Assumenda, fuga.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Molestias totam atque aut
+                            error quos consequatur recusandae. Dolore cum
+                            assumenda iste, praesentium et non nisi error
+                            deserunt quae eius nam, necessitatibus debitis
+                            sit alias! Repellat debitis libero, dolores,
+                            corrupti sed minima delectus odit, incidunt
+                            illum ducimus excepturi nostrum quidem.
+                            Perferendis magni totam delectus dignissimos.
+                            Repellat, porro reprehenderit eligendi officia
+                            beatae sit obcaecati commodi quaerat quas! Vitae
+                            est sequi deserunt voluptate iste provident
+                            numquam ipsa saepe quam, maxime officia minima
+                            accusamus obcaecati odit ratione incidunt, vel
+                            quaerat porro inventore dolor doloremque aliquid
+                            eligendi, sunt quo? Accusantium animi repellat
+                            quos laudantium mollitia ea, excepturi eveniet
+                            voluptatum dignissimos nulla, soluta dolor!
+                            Delectus esse velit iusto numquam ducimus
+                            repellat culpa, recusandae debitis natus impedit
+                            ex, corrupti consequatur! Doloremque ipsum
+                            harum, sapiente obcaecati voluptate odio vero
+                            necessitatibus asperiores, amet veniam eaque
+                            aliquid quam, nisi molestias consectetur commodi
+                            alias. Nulla praesentium facilis temporibus!
+                            Sequi temporibus consequuntur voluptas expedita
+                            iure quasi obcaecati nihil repudiandae placeat
+                            voluptatibus, laudantium tempore voluptates quia
+                            hic iste quis error facere adipisci? Ratione,
+                            eum consectetur nam magni placeat ipsum, iusto
+                            quo impedit eos, reiciendis fugiat pariatur
+                            corrupti debitis earum natus cum! Animi
+                            molestiae cumque qui veritatis dolorem, vero
+                            neque asperiores provident expedita, itaque
+                            amet?
+                        </p>
+                        <button class="dialog-close" data-dialog_id="dialog1">
+                            &times;
+                        </button>
+                    </div>
+                </dialog>
+                <dialog id="dialog2">
+                    <div>
+                        <h2>Dialog with id 2</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Assumenda, fuga.
+                        </p>
+                        <p>This is simple dialog with placeholder text.</p>
+                        <button class="dialog-close" data-dialog_id="dialog2">
+                            &times;
+                        </button>
+                    </div>
+                </dialog>
+                <h3>Correct usage:</h3>
+                <ul>
+                    <li>
+                        Remember to assign proper,
+                        <u>unique for single page</u>, ID (<code>&lt;dialog id="dialog1"></code>,
+                        <code>&lt;button class="dialog-close"
+                                data-dialog_id="dialog1">&times;&lt;/button></code>) for every dialog so javascript
+                        will know which
+                        dialog is needed to be shown.
+                    </li>
+                    <li>
+                        Use proper structure of <code>dialog</code> HTML
+                        element (which can be found in
+                        <a href="index.html">index page</a>)
+                    </li>
+                </ul>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <hr />
+        <p>
+            SimplyWCAG.css Lite &copy; 2025 y4ch0 | Licensed under
+            <a href="https://opensource.org/license/MIT">MIT license</a>
+        </p>
+        <a href="#">Back to top</a>
+    </footer>
+    <script>
+        document.querySelectorAll(".dialog-open").forEach((item) => {
+            item.addEventListener("click", () => {
+                document
+                    .getElementById(item.dataset.dialog_id)
+                    .setAttribute("open", "");
             });
-            document.querySelectorAll(".dialog-close").forEach((item) => {
-                item.addEventListener("click", () => {
-                    document
-                        .getElementById(item.dataset.dialog_id)
-                        .removeAttribute("open");
-                });
+        });
+        document.querySelectorAll(".dialog-close").forEach((item) => {
+            item.addEventListener("click", () => {
+                document
+                    .getElementById(item.dataset.dialog_id)
+                    .removeAttribute("open");
             });
-            document.body.addEventListener("click", function (event) {
-                const toggler = event.target.closest(".toggler");
-                if (toggler) {
-                    event.preventDefault();
-                    const dropdown = toggler.nextElementSibling;
-                    if (dropdown && dropdown.tagName === "UL") {
-                        dropdown.classList.toggle("show");
-                    }
+        });
+        document.body.addEventListener("click", function (event) {
+            const toggler = event.target.closest(".toggler");
+            if (toggler) {
+                event.preventDefault();
+                const dropdown = toggler.nextElementSibling;
+                if (dropdown && dropdown.tagName === "UL") {
+                    dropdown.classList.toggle("show");
+                }
+            } else {
+                document.querySelectorAll("ul.show").forEach((dropdown) => {
+                    dropdown.classList.remove("show");
+                });
+            }
+        });
+        document.querySelectorAll(".dark-mode-toggle").forEach((item) => {
+            item.addEventListener("click", () => {
+                if (document.body.classList.contains("dark-mode")) {
+                    document.body.classList.remove("dark-mode");
                 } else {
-                    document.querySelectorAll("ul.show").forEach((dropdown) => {
-                        dropdown.classList.remove("show");
-                    });
+                    document.body.classList.toggle("dark-mode");
                 }
             });
-            document.querySelectorAll(".dark-mode-toggle").forEach((item) => {
-                item.addEventListener("click", () => {
-                    if (document.body.classList.contains("dark-mode")) {
-                        document.body.classList.remove("dark-mode");
-                    } else {
-                        document.body.classList.toggle("dark-mode");
-                    }
-                });
-            });
-        </script>
-    </body>
+        });
+    </script>
+</body>
+
 </html>
