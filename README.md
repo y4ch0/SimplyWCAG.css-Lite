@@ -14,4 +14,4 @@ Download from [docs site](https://y4ch0.github.io/SimplyWCAG.css-Lite/).
 Read the [docs site](https://y4ch0.github.io/SimplyWCAG.css-Lite/).
 
 ## License
-This project is licensed under CC BY-SA 4.0 license.
+This project is licensed under MIT license.
