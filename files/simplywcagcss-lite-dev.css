@@ -6,7 +6,7 @@
 
 *:not(code) {
     font-family: sans-serif;
-    letter-spacing: .25px;
+    letter-spacing: 0.25px;
 }
 
 html {
@@ -144,8 +144,8 @@ blockquote footer {
 button,
 input[type="submit"],
 input[type="reset"],
-a[role=button] {
-    padding: 0.45rem 0.75rem;
+a[role="button"] {
+    padding: 0.35rem 0.75rem;
     font-size: 0.97rem;
     border-radius: 0.25rem;
     border: none;
@@ -159,8 +159,8 @@ a[role=button] {
 
 button,
 input[type="submit"],
-a[role=button] {
-    background-color: #0067B8;
+a[role="button"] {
+    background-color: #0067b8;
     color: #fff !important;
     font-weight: 400;
 }
@@ -168,20 +168,23 @@ a[role=button] {
 button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
-a[role=button]:hover {
+a[role="button"]:hover {
     filter: brightness(0.92);
     text-decoration: none !important;
 }
 
-button:disabled, a[aria-disabled=true] {
+button:disabled,
+a[aria-disabled="true"] {
     background-color: rgba(0, 0, 0, 0.2);
-    color: #000;
+    color: #000 !important;
     text-decoration: none !important;
     cursor: not-allowed;
 }
 
-button:disabled:hover, a[aria-disabled=true]:hover {
-    filter: brightness(1.1);
+button:disabled:hover,
+a[aria-disabled="true"]:hover {
+    color: #747474 !important;
+    filter: brightness(1);
 }
 
 fieldset {
@@ -328,6 +331,7 @@ table {
 
 table tr th {
     background-color: rgba(0, 0, 0, 0.05);
+    font-weight: bold;
 }
 
 table tr td,
@@ -350,10 +354,11 @@ kbd {
 
 dialog {
     width: 100vw;
+    max-width: unset;
     height: 100vh;
     position: fixed;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.05);
     border: none;
     z-index: 9999;
 }
@@ -366,22 +371,39 @@ dialog[open] {
 
 dialog div {
     background-color: #fff;
-    max-width: 50%;
+    max-width: 45%;
     max-height: 70%;
     overflow-y: auto;
     padding: 1rem;
-    border-radius: 0.5rem;
-    border: 2px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 0.5rem;
+    font-size: 0.95rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     position: relative;
+}
+
+dialog div h5:first-child {
+    width: calc(100% + 2rem);
+    max-width: calc(100% + 2rem);
+    margin: -1rem;
+    margin-bottom: 0.5rem;
+    min-height: 2rem;
+    display: flex;
+    background: rgb(0, 54, 126);
+    background: linear-gradient(0deg, rgba(0, 54, 126, 1) 0%, rgba(67, 108, 163, 1) 100%);
+    padding: 0.25rem 0.5rem;
+    padding-right: 2.5rem;
+    color: #fff;
 }
 
 dialog div .dialog-close {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: -0.25rem;
+    top: -0.25rem;
     font-size: 2rem;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    overflow: hidden;
     line-height: 2;
     display: flex;
     justify-content: center;
