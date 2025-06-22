@@ -63,7 +63,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
                     <ul>
                         <li>
                             <a href="files/simplywcagcss-lite.min.css" download
-                                target="_blank"><code>simplywcagcss-lite.min.css</code> (Size: 5KB)</a>
+                                target="_blank"><code>simplywcagcss-lite.min.css</code> (Size: 5.43KB)</a>
                         </li>
                     </ul>
                 </fieldset>
@@ -148,6 +148,19 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut assumenda deleniti,
             <section>
                 <h2>Link</h2>
                 <p>Paragraph with <a href="#">link</a>.</p>
+            </section>
+        </article>
+        <article>
+            <section>
+                <dl>
+                    <dt>Banana</dt>
+                    <dd>A yellow fruit that is easy to peel.</dd>
+                    <dd>Which also grows on a tree.</dd>
+                    <dt>Cashew</dt>
+                    <dd>A tan nut without a peel.</dd>
+                    <dt>Cherry</dt>
+                    <dd>A red fruit that is hard to peel.</dd>
+                </dl>
             </section>
         </article>
         <article>
@@ -486,15 +499,6 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut assumenda deleniti,
                     dropdown.classList.remove("show");
                 });
             }
-        });
-        document.querySelectorAll(".dark-mode-toggle").forEach((item) => {
-            item.addEventListener("click", () => {
-                if (document.body.classList.contains("dark-mode")) {
-                    document.body.classList.remove("dark-mode");
-                } else {
-                    document.body.classList.toggle("dark-mode");
-                }
-            });
         });
     </script>
 </body>
